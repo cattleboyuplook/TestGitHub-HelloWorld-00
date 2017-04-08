@@ -1,0 +1,22 @@
+############################################################################
+# Date: 2017-04-08 11:29:30
+# Auth: cattleboyuplook
+############################################################################
+
+[配置git 文件]
+
+2.1. git config --system  
+		命令会查找 /etc/gitconfig 该文件含有 对系统上所有用户及他们所拥有的仓库都生效的配置值
+		
+2.2. git config --global  
+		命令会查找每个用户的~/.gitconfig文件
+
+2.3. git config --local      
+		命令会查找由用户定义的各个库中 Git 目录下的配置文件（.git/config）该文件中的值只对该git库有效
+		
+eg:		
+	git config --local user.name "cattleboyuplook"
+	git config --local user.email "cattleboyuplook@163.com"
+
+now: 
+	test git branch 
